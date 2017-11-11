@@ -1,0 +1,16 @@
+$ff: sans-serif;
+$bg: grey;
+
+body{
+	background: $bg;
+	font-family: $ff;
+}
+@import 'import.scss '
+
+#box{
+	background:red;
+	@mixin border-radius($radius) {
+          border-radius: $radius;
+}
+#box @include border-radius(10px); }
+}
